@@ -1,0 +1,518 @@
+
+
+/*Pöytäkoneella tai läppärillä katsottaessa*/
+@media only screen and (min-width: 1024px) {
+
+/*Koko sivulle*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+header, section, nav, figure, aside, article, footer {
+	display: block;
+}
+
+/*body määritykset */
+body, html {margin: 0; padding: 0; background-color: #fff;
+}
+body {font-family: Georgia, serif; color: #000000; overflow-x: hidden}
+
+/*määritetään osien kooot ja sijainti yleisesti*/
+.headercontent, .mainsection, .lowersection {width: 1000px; margin: 0 auto; position: relative;}
+.mainsection { float: none; padding-top: 0;}
+
+
+.mainsection {margin-top: 110px;}
+
+
+/*-------heaederi-------->*/
+header {
+	background-color: #3F3C3C;
+	height: 150px;
+	margin-top: 0;
+	-webkit-box-shadow: 0px -1px 20px 0px rgba(31, 50, 50, 0.75);
+-moz-box-shadow:    0px -1px 20px 0px rgba(31, 50, 50, 0.75);
+box-shadow:         0px -1px 20px 0px rgba(31, 50, 50, 0.75);
+}
+header h1{
+	font-weight: bold;
+	color: white; 
+	text-align: center;
+
+}
+/*Ns Logo*/
+.firstN {color: #74E537; font-weight: bold; font-size: 48px; position: absolute; left: 0px; top: 40px; bottom: 30px;font-family: "Arial", Helvetica, sans-serif}
+.lastN {color: white; font-weight: bold; font-size: 48px;  position: absolute; left: 200px; top: 40px; bottom: 30px;font-family: "Arial", Helvetica, sans-serif}
+header p {font-size: 18px; color: white; font-family: Arial; position: absolute; top: 60px; right: 300px; font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;}
+
+/*<-------------Päävalikko-------------->*/
+nav {
+	height: 50px;
+	position: relative; top: 120px; 
+	background-color: #F9F9F9;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #DDDDDD;
+	border-radius: 0px;
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    overflow: hidden;
+    display: block;
+}
+nav:before, nav:after {
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+nav ul {
+	list-style-type: none;
+	float left;
+}
+nav ul li {
+	display: inline;
+	position: relative;
+	left: 15px;
+	top:10px;
+	bottom: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-spacing: 10px;
+	border-right: 2px groove #fff;
+	padding: 5px;
+
+}
+nav ul li a {
+	text-decoration: none;
+	color: black;
+	font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+
+}
+
+/*Kielikuvakkeet*/
+.flags {
+	float:right;
+	position: relative;
+	right: 30px;
+}
+.flags ul li {
+	border: none;
+	list-style-type: none;
+	float: left;
+	margin: 10px;
+}
+
+
+
+/*<-----------------Sivun main-osio------------------->*/
+.main {
+	height: 400px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #DDDDDD;
+	border-radius: 2px;
+	-moz-box-shadow: inset 0 0 1px 1px #888;
+	-webkit-box-shadow: inset 0 0 1px 1px#888;
+	box-shadow: inset 0 0 1px 1px #888;
+	background-color: #F9F9F9;
+}
+.main table {
+	
+	margin-right: auto;
+	margin-left: auto;
+	height: 400px;
+	width: 95%;
+}
+.main table td {
+	padding: 10px;
+}
+.main h3 {
+	position: relative;
+	top: -40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #7EB352;
+	font-size: 54px;
+	font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+}
+.main img {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #888;
+	border-radius: 2px;
+
+}
+/*CV ikonin luonti*/
+.cv{
+	position: relative;
+	bottom: -20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	right: -20px;
+	padding: 5px 30px 5px 30px;
+	background-color: #7EB352;
+	color: white;
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.cv:before, .cv:after {
+
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+
+
+
+.main p {
+	position: relative;
+	top: -10px;
+	width: 70%;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+
+.main ul li {
+	list-style: none;
+	display: inline;
+}
+
+/*info osio*/
+.info {
+	position: relative;
+	
+}
+.info p {
+	font-size: 14px;
+	margin-top: 5px;
+}
+.info span {
+	position: relative;
+	bottom: 5px;
+	color: #7EB352;
+}
+.info ul {
+	position: relative;
+	top: 10px;
+	}
+.info img {
+	width: 20px;
+	height: 20px;
+}
+/*näkyvät vain kännykässä*/
+.sociallinks {
+	visibility: hidden;
+}
+
+
+/*<----------------Alaosio------------->*/
+.footer {
+	position: relative;
+	top: 50px;
+	margin-bottom: 100px;
+	
+}
+.footer h4 {
+	text-transform: uppercase;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	color: #7EB352;
+	margin-bottom: 20px;
+}
+.footer table {
+	width: 100%
+}
+.footer table td {
+	padding: 15px;
+	border-spacing: 10px;
+}
+.middle {
+	border-left: 1px groove #80847D;
+	border-right: 1px groove #80847D;
+}
+
+footer {
+	border-top: 1px solid #ccc;
+	height: 60px;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+footer p {
+	position: relative;
+	left: 30px;
+	top: 10px;
+}
+footer img {
+	width: 20px;
+	height: 20px;
+}
+footer ul {
+	list-style-type: none;
+	text-decoration: none;
+}
+footer li {
+	float:right;
+	position: relative;
+	right: 50px;
+	top: -5px;
+	margin: 0 5px;
+}
+
+
+
+}
+
+
+
+/*<-------------------Älypuhelimen selaimen asetukset--------------------->*/
+@media screen and (max-device-width:480px) {
+	
+
+/*Yleiset asetukset*/
+	* {
+	margin: 0;
+	padding: 0;
+}
+
+header, section, nav, figure, aside, article, footer {
+	display: block;
+}
+
+body, html {margin: 0; padding: 0; background-color: #fff;
+}
+body {font-family: Georgia, serif; color: #000000;}
+
+
+/*Sovitetaan sisältö näytön kokoon*/
+.headercontent, .mainsection, .lowersection {width: 100%; margin: 0 auto; position: relative;}
+.mainsection { float: none; padding-top: 0; margin-top: 110px;}
+
+
+
+/*Header*/
+header {
+	width: 100%;
+	background-color: #3F3C3C;
+	height: 150px;
+	margin-top: 0;
+	-webkit-box-shadow: 0px -1px 20px 0px rgba(31, 50, 50, 0.75);
+-moz-box-shadow:    0px -1px 20px 0px rgba(31, 50, 50, 0.75);
+box-shadow:         0px -1px 20px 0px rgba(31, 50, 50, 0.75);
+}
+header h1{
+	font-weight: bold;
+	color: white; 
+	text-align: center;
+
+}
+
+/*Ns logo*/
+.firstN {
+	color: #74E537; 
+	font-weight: bold; 
+	font-size: 36px; 
+	position: absolute; 
+	left: 120px; 
+	top: 40px; 
+	bottom: 30px;
+	font-family: "Arial", Helvetica, sans-serif
+}
+
+.lastN {
+	color: white; 
+	font-weight: bold; 
+	font-size: 36px;  
+	position: absolute; 
+	left: 220px; top: 40px; 
+	bottom: 30px;
+	font-family: "Arial", Helvetica, sans-serif
+}
+
+header p {
+	font-size: 18px;
+	color: white; 
+	font-family: Arial; 
+	position: absolute; 
+	top: 90px; 
+	left: 150px; 
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+/*<---------------Päävalikko--------------------->*/
+nav {
+	width: 300px;
+	position: relative;
+	left: 80px;
+}
+nav ul {
+	list-style-type: none;
+	position: relative;
+	border-bottom: none;
+	top: 150px;
+
+}
+
+nav ul li  {
+	padding: 5px 0;
+	text-transform: uppercase;
+	background-color: #7EB352;
+
+}
+nav a  {
+	text-decoration: none;
+	position: relative;
+	left: 120px;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 15px;
+	color: #fff;
+}
+
+/*Kielikuvakkeet*/
+.flags {
+	position: relative;
+	top: 30px;
+}
+.flags li {
+	float: left;
+	position: relative;
+	list-style-type: none;
+	margin: 0 5px;
+	left: 10px;
+	
+}
+
+p {
+		font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+		font-size: 16px;
+	}
+
+
+/*Älypuhelimessa tablen rivien solut muutetaan riveiksi*/
+	table, thead, tbody, th, tr, td {
+		display: block;
+	}
+
+	
+
+	td {border:none;
+		margin-top: 40px;
+		position: relative;
+		left: 30px;
+		width: 400px;
+	}
+	td img {
+		position: relative; 
+		left: 50px;
+	}
+
+
+	/*<----------------------Main osio----------------->*/
+	.main {
+		position: relative;
+		top: 30px;
+	}
+
+	.main h3 {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #7EB352;
+	font-size: 36px;
+	font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+	}
+
+	.main span {
+		position: relative;
+		bottom: 5px;
+		color: #7EB352;
+	}
+
+	/*Ei näytetä kuvakkeita*/
+	.socialicons {
+		visibility: hidden;
+	}
+
+	/*CV ikoni*/
+	.cv{
+	position: relative;
+	bottom: -20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-top: 30px;
+	padding: 5px 30px 5px 30px;
+	background-color: #7EB352;
+	color: white;
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+	/*Info osio*/
+.info {
+	border-top: 2px solid black;
+	padding-top: 20px;
+	margin-top: 50px;
+}
+
+/*Älypuhelimessa näkyvät sosiaalisen median linkit*/
+.sociallinks {
+	margin-top: -230px;
+}
+.sociallinks li {
+	list-style-type: none;
+	display: inline;
+}
+.sociallinks a {
+	text-decoration: none;
+	font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+	color: black;
+}
+.sociallinks a:hover {
+	color:blue;
+	}
+
+.footer {
+	position: relative;
+	top: 50px;
+	margin-bottom: 100px;
+	
+}
+.footer h4 {
+	text-transform: uppercase;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	color: #7EB352;
+	margin-bottom: 20px;
+}
+footer {
+	border-top: 1px solid #ccc;
+}
+footer p {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 8px;
+}
+
+}
+

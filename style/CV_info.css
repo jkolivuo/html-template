@@ -1,0 +1,105 @@
+/*Pöytäkoneella tai läppärillä katsottaessa*/
+@media only screen and (min-width: 1024px) {
+
+
+
+/*Main osio*/
+.main_menu {
+	height: 250px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #DDDDDD;
+	border-radius: 2px;
+	-moz-box-shadow: inset 0 0 1px 1px #888;
+	-webkit-box-shadow: inset 0 0 1px 1px#888;
+	box-shadow: inset 0 0 1px 1px #888;
+	background-color: #F9F9F9;
+	overflow-x: hidden;
+}
+.main_menu img {
+	height: 248px;
+	position: relative;
+	top:-1px;
+	right: -4px;
+	
+}
+.main_menu h1 {
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	position: relative;
+	color: #7EB352;
+	font-size: 50px;
+	left: 30px;
+	top: -40px;
+	font-weight: bold;
+}
+.main_menu p {
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	position: relative;
+	left:30px;
+	top: -10px;
+}
+
+/*<-------ProfessionalInfo----------->*/
+
+.profInfo {
+	margin-top: 50px;
+	width: 700px;
+}
+.profInfo h1 {
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+}
+.Job span {
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	color:#7EB352;
+	font-weight: none;
+	font-size: 22px;
+}
+.time {
+	padding-bottom: 10px;
+}
+.text {
+	padding-bottom: 20px;
+}
+
+.profInfo p {
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	font-size: 16px;
+}
+
+.profInfo td {
+	padding: 10px;
+}
+
+.sidebar {
+	position: relative;
+	float: right;
+	top: 70px;
+	width: 250px;
+}
+.sidebar ul {
+	list-style-type: none;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.sidebar h4 {
+	border-bottom: 1px solid #ccc;
+	font-size: 22px;
+	color:#7EB352;
+	padding-bottom: 5px;
+}
+.sidebar table {
+	
+	width: 100%;
+}
+
+.contact form{
+	margin-bottom: 70px;
+}
+.contact h3 {
+	font-family: "Arial";
+}
+
+
+}
